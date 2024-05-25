@@ -1,0 +1,64 @@
+@charset "UTF-8";
+
+body {
+    margin: 0;
+    background-color: #f9f9f9; 
+    background-image: url('../images/valise.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+ 
+  .form-container {
+    display: flex;
+    justify-content: center;
+    margin: 100px auto;
+    width: 50%;   
+    flex-direction: column;
+   /* background-color: whitesmoke ;*/
+    padding: 30px;
+    border: 2px solid #ddd;
+    box-shadow: 0px 0px 4px #ddd;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.5); /* Couleur blanche avec 50% d'opacité */
+
+  }
+input[type="text"], input[type="tel"], input[type="email"], input[type="password"] {
+  width: 100%; /* Utilise toute la largeur disponible */
+  padding: 8px;
+  margin: 10px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  width: 100%;
+  background-color: rgb(65, 126, 126);
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: rgb(65, 126, 126);
+}
+.btn {
+  margin: 5px;
+  background-color: rgb(54, 144, 240);
+  border: none;
+  color: white;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  display:inline-block;
+  border-radius: 6px;
+}
+.btn:hover{
+  background-color:  #077dd6;
+}

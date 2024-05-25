@@ -1,0 +1,299 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+}
+/***********LOGO**********************/
+.logo{
+    padding:10px;
+}
+.logo a {
+    color: #fff;
+    padding: 2px 20px;
+    border: 3px solid #fff;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 900;
+    text-shadow: rgba(0, 0, 0, 0, 7);
+    font-size: large;
+}
+
+.logo span {
+    color:  #658faf;
+    font-weight: bold;
+    font-size: xx-large;
+}
+
+a:hover{
+    color:  #658faf;
+}
+/******************************/
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.grid-item {
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.stat {
+    text-align: center;
+}
+
+.stat h3 {
+    margin-top: 0;
+}
+/***************************************/
+.sidebar {
+    width: 250px;
+    background-color: #527692;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 0;
+    border-right: 1px solid #ccc;
+}
+
+.sidebar nav ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+
+.sidebar nav ul li {
+    width: 100%;
+}
+
+.sidebar nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    transition: background 0.3s;
+    box-sizing: border-box;
+}
+
+.sidebar nav ul li a i {
+    margin-right: 10px;
+}
+
+.sidebar nav ul li a:hover {
+    background-color: #658faf;
+}
+
+.content {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+
+#form-section, #main-content {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+#form-section h2, #main-content h1, #main-content h2 {
+    margin-top: 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form input[type="date"],
+form select {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form input[type="submit"] {
+    background-color: #009688;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background-color: #00796B;
+}
+
+.add-user, .add-offer, .add-report {
+    margin-top: 50px;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.add-user:hover, .add-offer:hover, .add-report:hover {
+    opacity: 0.8;
+}
+
+.user-list, .offer-list, .report-list {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.user-list th, .user-list td, .offer-list th, .offer-list td, .report-list th, .report-list td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.user-list th, .offer-list th, .report-list th {
+    background-color: #333;
+    color: white;
+}
+
+.user-list tr:nth-child(even), .offer-list tr:nth-child(even), .report-list tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.user-list tr:hover, .offer-list tr:hover, .report-list tr:hover {
+    background-color: #ddd;
+}
+
+.user-list th, .offer-list th, .report-list th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+}
+
+.actions a, .actions button {
+    margin-right: 10px;
+}
+
+/* Nouveau design pour les rapports */
+.report-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.report-card {
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    flex: 1;
+    min-width: 300px;
+    position: relative;
+}
+
+.report-card h3 {
+    margin-top: 0;
+}
+
+.card-actions {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+.edit-btn, .delete-btn {
+    background-color: #00796B;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    margin-right: 5px;
+}
+
+.delete-btn {
+    background-color: #d32f2f;
+}
+
+.edit-btn:hover, .delete-btn:hover {
+    opacity: 0.8;
+}
+#dashboard {
+    margin: 0 auto; /* Pour centrer horizontalement */
+    width: 70%; /* Largeur du tableau de bord */
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-top: 100px;
+    margin-left: 300px;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.stat {
+    text-align: center;
+}
+
+.stat h3 {
+    margin-top: 0;
+}.simple-table {
+    width: 80%; /* Largeur du tableau */
+    margin: 20px auto; /* Centrage horizontal avec marge autour */
+    border-collapse: collapse;
+}
+
+.simple-table th, .simple-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.simple-table th {
+    background-color: #333;
+    color: white;
+}
+
+.simple-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.simple-table tr:hover {
+    background-color: #ddd;
+}
